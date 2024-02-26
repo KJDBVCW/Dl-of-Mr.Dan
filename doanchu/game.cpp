@@ -1,35 +1,26 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <cstdlib>
-#include <ctime>
-
 using namespace std;
+#include <fcntl.h>
 
-// Chức năng kiểm tra xem chữ cái đoán được có trong từ hay không
-bool isLetterInWord(char letter, const string& word) {
-    for (char c : word) {
-        if (c == letter) {
-            return true;
-        }
-    }
-    return false;
-}
 
-// Chức năng hiển thị trạng thái hiện tại của từ được đoán
-void displayWord(const string& guessedWord) {
-    for (char c : guessedWord) {
-        cout << c << " ";
-    }
-    cout << endl;
-}
+#include "mylib.h"
+int main(){
+    _setmode(_fileno(stdin), _O_U16TEXT);
+    _setmode(_fileno(stdout), _O_U16TEXT);
 
-int main() {
-    vector<string> words = {"apple", "banana", "orange", "strawberry", "kiwi"};
-    srand(time(0));
-    string wordToGuess = words[rand() % words.size()];
-    string guessedWord(wordToGuess.length(), '_');
-    int attempts = 6;
+    string dstu[1000];
+    int N;
+    
+
+    srand(time(0)); // Khởi tạo seed cho hàm ngẫu nhiên
+    vector<string> words;
+
+    NapTuDien(words, "data.txt"); // Gọi hàm NapTuDien để lấy danh sách từ
+
+    string wordToGuess = words[rand() % words.size()]; // Lấy từ ngẫu nhiên từ danh sách
+    string guessedWord(wordToGuess.length(), '_'); // Khởi tạo chuỗi guessedWord với dấu gạch dưới
+
+    int attempts = 6; // Số lần thử
 
     cout << "Welcome to the Guess the Word game!\n";
     cout << "Try to guess the word.\n";
@@ -64,3 +55,4 @@ int main() {
 
     return 0;
 }
+
