@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// Function to check if the guessed letter is present in the word
+// Chức năng kiểm tra xem chữ cái đoán được có trong từ hay không
 bool isLetterInWord(char letter, const string& word) {
     for (char c : word) {
         if (c == letter) {
@@ -17,7 +17,7 @@ bool isLetterInWord(char letter, const string& word) {
     return false;
 }
 
-// Function to display the current state of the guessed word
+// Chức năng hiển thị trạng thái hiện tại của từ được đoán
 void displayWord(const string& guessedWord) {
     for (char c : guessedWord) {
         cout << c << " ";
@@ -25,7 +25,7 @@ void displayWord(const string& guessedWord) {
     cout << endl;
 }
 
-// Function to read words from a file and return them as a vector of strings
+// Hàm đọc các từ trong một tệp và trả về chúng dưới dạng vectơ của chuỗi
 vector<string> readWordsFromFile(const string& filename) {
     vector<string> words;
     ifstream inputFile(filename);
@@ -42,7 +42,7 @@ vector<string> readWordsFromFile(const string& filename) {
 }
 
 int main() {
-    vector<string> words = readWordsFromFile("words.txt"); // Thay "words.txt" bằng tên tệp văn bản chứa danh sách các từ
+    vector<string> words = readWordsFromFile("words.txt"); 
 
     srand(time(0));
     string wordToGuess = words[rand() % words.size()];
