@@ -1,0 +1,34 @@
+17 7 2014	
+dau FO	 
+20.000.00		
+Công Ty TNHH Petrolimex	128 Dinh Tien Hoang, F3, Q.Binh Thanh, TP.HCM
+PN0002	
+24 7 2014	
+cat	 
+33.00 		
+130 Dinh Tien Hoang, F3, Q.Binh Thanh, TP.HCM
+PN0003	
+26 7 2014	
+Bot đa Holeim	 
+43.00 		
+Công Ty Hocim	129 Dinh Tien Hoang, F3, Q.Binh Thanh, TP.HCM
+PN0005	
+23 7 2014	
+nhua đuong	 
+11.770.00 		
+127 Dinh Tien Hoang, F3, Q.Binh Thanh, TP.HCM
+PN0006	
+23 8 2014	
+ximang	 
+101.00 		
+130 Dinh Tien Hoang, F3, Q.Binh Thanh, TP.HCM
+PN0007	
+15 10 2014	
+betong	 
+22.00 		
+130 Dinh Tien Hoang, F3, Q.Binh Thanh, TP.HCM
+PN0008	
+23 10 2014	
+gach	 
+11.00 		
+130 Dinh Tien Hoang, F3, Q.Binh Thanh, TP.HCM
